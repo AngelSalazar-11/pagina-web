@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    color: #ddd;
+}
+
+#front-page-container, #about-page-container, #works-page-container, #contact-page-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #01151c;
+}
+
+#front-page-left, #about-page-right, #works-page-left, #contact-page-right {
+    width: 45%;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+#front-page-right, #about-page-left, #works-page-right, #contact-page-left {
+    width: 55%;
+}
+
+#front-page-right {
+    background: url(https://pbs.twimg.com/media/DkkVleCVsAAi4Bp.jpg) center center / cover;
+}
+
+#about-page-left {
+    background: url(https://urbanian.mundodeportivo.com/p/294e/10377_10_calamardo_bob_esponja.jpg?cb=7779369) top center / cover;
+}
+
+#works-page-right {
+    background: url(https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6010819a1e35ce020a59d282_6002086f72b727d17f01dcfa_ecommerce-website-design-examples.jpeg) center center / cover;
+}
+
+#contact-page-left {
+    background: url(https://miagenda.website/wp-content/uploads/2022/08/Agenda-Diaria.jpg) center center / cover;
+}
+
+.header i {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.header h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #f7c000;
+}
+
+.change-page-button {
+    font-size: 2rem;
+    color: white;
+    background-color: #f7c000;
+    padding: 0.1rem 0.5rem;
+    border-radius: 50px;
+    transition: 0.5 ease;
+}
+
+.change-page-button:hover {
+    background-color: #f7c000ee;
+    box-shadow: 0 0 5px #333;
+}
+
+.links-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.button {
+    display: block;
+    background-color: #f7c000;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem;
+    width: 10rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 3px #222;
+}
+
+.button:hover {
+    font-size: 1.01rem;
+    background-color: #f7c000ee;
+    box-shadow: 0 0 5px #333;
+}
+
+input, textarea {
+    width: 80%;
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid #f7c000ee;
+    background-color: #000812;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-family: Verdana, sans-serif;
+}
+
+input:focus, textarea:focus {
+    border-color: #f7c20079;
+    outline: none;
+    background-color: #000812aa;
+}
+
+textarea {
+    height: 7rem;
+    resize: none;
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 0.5rem 3rem;
+    background-color: #000812;
+    color: white;
+    border: 2px solid #f7c000ee;
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #f7c000ee;
+}
